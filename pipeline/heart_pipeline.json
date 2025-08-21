@@ -73,7 +73,13 @@
 							"inputs": [
 								{
 									"referenceName": "heart_source_files",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"p_file_name": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
