@@ -33,9 +33,16 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "heart_ds_looping",
 				"type": "ForEach",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "heart_metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": []
 			}
 		],
