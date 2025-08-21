@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azmat-data-factory933"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://azmatstorageaccount.dfs.core.windows.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://github.com/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "tcp:azmat-test-server.database.windows.net,1433"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "test"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "azmat_ali"
+		}
+	}
+}
