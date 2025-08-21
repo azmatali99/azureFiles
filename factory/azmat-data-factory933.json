@@ -1,0 +1,9 @@
+{
+	"name": "azmat-data-factory933",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eb0490ac-f646-4e66-a971-ac052de30a35",
+		"tenantId": "fcf628f4-cbe7-4277-b986-0faf370ac21d"
+	}
+}
