@@ -104,7 +104,13 @@
 							"outputs": [
 								{
 									"referenceName": "heart_target_Data",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"p_file_name": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
