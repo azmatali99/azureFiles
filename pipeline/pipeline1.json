@@ -19,9 +19,12 @@
 						"referenceName": "source_csv_files",
 						"type": "DatasetReference"
 					},
-					"fieldList": [],
+					"fieldList": [
+						"childItems"
+					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
