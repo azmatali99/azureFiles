@@ -56,6 +56,10 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
+								"expression": {
+									"value": "@startswith(item().name, 'Heart')",
+									"type": "Expression"
+								},
 								"ifTrueActivities": [
 									{
 										"name": "Copy data1",
