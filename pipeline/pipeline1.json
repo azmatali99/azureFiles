@@ -57,7 +57,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@startswith(item().name, 'Heart')",
+									"value": "@startswith(item().name, 'heart')",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
