@@ -110,7 +110,13 @@
 							"outputs": [
 								{
 									"referenceName": "target_csv_files",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"p_file_name": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
