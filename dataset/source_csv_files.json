@@ -19,6 +19,7 @@
 					"value": "@dataset().p_file_name",
 					"type": "Expression"
 				},
+				"folderPath": "cvs_Files",
 				"fileSystem": "sourcedb"
 			},
 			"columnDelimiter": ",",
