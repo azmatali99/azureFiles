@@ -153,7 +153,7 @@
 										"userProperties": [],
 										"typeProperties": {
 											"dataflow": {
-												"referenceName": "dataflow1",
+												"referenceName": "new_heart_dataflow",
 												"type": "DataFlowReference"
 											},
 											"compute": {
