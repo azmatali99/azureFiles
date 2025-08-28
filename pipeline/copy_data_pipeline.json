@@ -122,13 +122,7 @@
 										"outputs": [
 											{
 												"referenceName": "move_heart_target_db",
-												"type": "DatasetReference",
-												"parameters": {
-													"p_file_name": {
-														"value": "concat(@item().name, utcNow())",
-														"type": "Expression"
-													}
-												}
+												"type": "DatasetReference"
 											}
 										]
 									}
