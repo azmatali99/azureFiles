@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "reportdb"
+				"folderPath": "cvs_Files",
+				"fileSystem": "sourcedb"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
