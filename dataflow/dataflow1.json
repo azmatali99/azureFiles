@@ -5,6 +5,10 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "heart_source_dataset_df",
+						"type": "DatasetReference"
+					},
 					"name": "sourceDataFlow"
 				}
 			],
@@ -12,7 +16,8 @@
 			"transformations": [],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> sourceDataFlow"
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> sourceDataFlow"
 			]
 		}
 	}
