@@ -12,10 +12,21 @@
 					"name": "source1"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "targetMaleData",
+						"type": "DatasetReference"
+					},
+					"name": "targetMaleDataSource"
+				}
+			],
 			"transformations": [
 				{
-					"name": "split1"
+					"name": "split1GenderMale"
+				},
+				{
+					"name": "summerizeMaleData"
 				}
 			],
 			"scriptLines": [
@@ -38,8 +49,19 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 split(ERROR_FUNCTION(''),",
-				"     disjoint: false) ~> split1@(, )"
+				"source1 split(sex,",
+				"     disjoint: false) ~> split1GenderMale@(maleData, FemaleData)",
+				"split1GenderMale@maleData aggregate(groupBy(age),",
+				"     age = ERROR_FUNCTION(''),",
+				"          sex = ERROR_FUNCTION(''),",
+				"          cp = ERROR_FUNCTION('')) ~> summerizeMaleData",
+				"summerizeMaleData sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> targetMaleDataSource"
 			]
 		}
 	}
