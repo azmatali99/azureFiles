@@ -131,37 +131,6 @@
 												}
 											}
 										]
-									},
-									{
-										"name": "heart_data_flow",
-										"type": "ExecuteDataFlow",
-										"dependsOn": [
-											{
-												"activity": "copy_heart_data",
-												"dependencyConditions": [
-													"Succeeded"
-												]
-											}
-										],
-										"policy": {
-											"timeout": "0.12:00:00",
-											"retry": 0,
-											"retryIntervalInSeconds": 30,
-											"secureOutput": false,
-											"secureInput": false
-										},
-										"userProperties": [],
-										"typeProperties": {
-											"dataflow": {
-												"referenceName": "new_heart_dataflow",
-												"type": "DataFlowReference"
-											},
-											"compute": {
-												"coreCount": 8,
-												"computeType": "General"
-											},
-											"traceLevel": "Fine"
-										}
 									}
 								]
 							}
