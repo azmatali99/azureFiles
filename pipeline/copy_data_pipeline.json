@@ -54,7 +54,13 @@
 							"name": "if_file_is_heart",
 							"type": "IfCondition",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@startswith(item().name, 'heart')",
+									"type": "Expression"
+								}
+							}
 						}
 					]
 				}
