@@ -48,7 +48,15 @@
 						"value": "@activity('get_source_metadata').output.childItems",
 						"type": "Expression"
 					},
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "if_file_is_heart",
+							"type": "IfCondition",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
