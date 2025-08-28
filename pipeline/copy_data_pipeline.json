@@ -79,6 +79,7 @@
 												"type": "DelimitedTextSource",
 												"storeSettings": {
 													"type": "AzureBlobFSReadSettings",
+													"fileListPath": "sourcedb/cvs_Files",
 													"enablePartitionDiscovery": false
 												},
 												"formatSettings": {
