@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "heart_source_dataset_df",
+						"referenceName": "copy_heart_source_data",
 						"type": "DatasetReference"
 					},
 					"name": "sourceDataFlow"
