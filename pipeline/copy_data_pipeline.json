@@ -30,6 +30,22 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "for_Each_csv_file",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "get_source_metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
+				}
 			}
 		],
 		"annotations": []
