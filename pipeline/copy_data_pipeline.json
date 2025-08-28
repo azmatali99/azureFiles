@@ -44,6 +44,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('get_source_metadata').output.childItems",
+						"type": "Expression"
+					},
 					"isSequential": true
 				}
 			}
