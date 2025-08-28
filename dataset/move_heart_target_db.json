@@ -19,6 +19,7 @@
 					"value": "@dataset().p_file_name",
 					"type": "Expression"
 				},
+				"folderPath": "heart_data",
 				"fileSystem": "reportdb"
 			},
 			"columnDelimiter": ",",
