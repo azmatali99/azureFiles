@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "maleDataList",
-				"folderPath": "MaleData",
+				"fileName": "testTable",
+				"folderPath": "TestData",
 				"fileSystem": "targetdb"
 			},
 			"columnDelimiter": ",",
