@@ -7,7 +7,8 @@
 		},
 		"parameters": {
 			"targetFile": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "'test'"
 			}
 		},
 		"annotations": [],
