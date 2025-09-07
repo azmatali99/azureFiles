@@ -47,7 +47,7 @@
 				"typeProperties": {
 					"activities": [
 						{
-							"name": "Copy data1",
+							"name": "loadCsvData",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
