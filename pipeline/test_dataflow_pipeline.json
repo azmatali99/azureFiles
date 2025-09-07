@@ -45,6 +45,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('getConfigFile').output.firstRow",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "loadCsvData",
