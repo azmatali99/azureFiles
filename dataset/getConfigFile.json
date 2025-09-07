@@ -1,0 +1,36 @@
+{
+	"name": "getConfigFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakecsv",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Config File.csv",
+				"fileSystem": "config"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "database",
+				"type": "String"
+			},
+			{
+				"name": "tablename",
+				"type": "String"
+			},
+			{
+				"name": "targetpath",
+				"type": "String"
+			}
+		]
+	}
+}
