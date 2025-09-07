@@ -29,7 +29,8 @@
 					"dataset": {
 						"referenceName": "getConfigFile",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
