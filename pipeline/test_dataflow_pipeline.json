@@ -69,7 +69,13 @@
 							"inputs": [
 								{
 									"referenceName": "AzureSqlTableData",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"db_name": {
+											"value": "@item().database",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
