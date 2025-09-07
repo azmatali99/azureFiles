@@ -108,7 +108,13 @@
 							"outputs": [
 								{
 									"referenceName": "targetCSVData",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"targetFile": {
+											"value": "@item().targetPath",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
