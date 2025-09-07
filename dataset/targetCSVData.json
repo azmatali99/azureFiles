@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().targetFile",
+					"type": "Expression"
+				},
 				"fileSystem": "targetdb"
 			},
 			"columnDelimiter": ",",
@@ -22,27 +26,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "age",
-				"type": "String"
-			},
-			{
-				"name": "sex",
-				"type": "String"
-			},
-			{
-				"name": "Maximum Target",
-				"type": "String"
-			},
-			{
-				"name": "Total ca",
-				"type": "String"
-			},
-			{
-				"name": "cp",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
