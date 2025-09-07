@@ -5,24 +5,12 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"dataset": {
-						"referenceName": "AzureSqlTableTest",
-						"type": "DatasetReference"
-					},
 					"name": "azuresqlDatasource"
 				}
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "targetMaleData",
-						"type": "DatasetReference"
-					},
-					"name": "sink1",
-					"rejectedDataLinkedService": {
-						"referenceName": "AzureDataLakeStorage1",
-						"type": "LinkedServiceReference"
-					}
+					"name": "sink1"
 				}
 			],
 			"transformations": [],
@@ -33,16 +21,13 @@
 				"          date_create as date",
 				"     ),",
 				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     isolationLevel: 'READ_UNCOMMITTED',",
-				"     format: 'table') ~> azuresqlDatasource",
+				"     validateSchema: false) ~> azuresqlDatasource",
 				"azuresqlDatasource sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true,",
+				"     preCommands: [],",
+				"     postCommands: []) ~> sink1"
 			]
 		}
 	}
