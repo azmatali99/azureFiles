@@ -115,7 +115,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"targetFile": {
-											"value": "@item().targetpath",
+											"value": "item().targetpath\n",
 											"type": "Expression"
 										}
 									}
