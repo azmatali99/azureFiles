@@ -9,6 +9,9 @@
 			"targetFile": {
 				"type": "string",
 				"defaultValue": "'test'"
+			},
+			"targetPath": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
