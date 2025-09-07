@@ -23,6 +23,10 @@
 					"value": "@dataset().targetFile",
 					"type": "Expression"
 				},
+				"folderPath": {
+					"value": "@dataset().targetPath",
+					"type": "Expression"
+				},
 				"fileSystem": "targetdb"
 			},
 			"columnDelimiter": ",",
