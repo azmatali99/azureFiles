@@ -29,7 +29,24 @@
 					"dataset": {
 						"referenceName": "getConfigFile",
 						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
+				}
+			},
+			{
+				"name": "ForEachEntry",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "getConfigData",
+						"dependencyConditions": [
+							"Succeeded"
+						]
 					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
 				}
 			}
 		],
