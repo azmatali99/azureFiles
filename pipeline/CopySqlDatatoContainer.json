@@ -80,6 +80,14 @@
 										"db_name": {
 											"value": "@item().database",
 											"type": "Expression"
+										},
+										"schema_name": {
+											"value": "@split(item().tablename, '.')[0]",
+											"type": "Expression"
+										},
+										"table_name": {
+											"value": "@split(item().tablename, '.')[1]",
+											"type": "Expression"
 										}
 									}
 								}
