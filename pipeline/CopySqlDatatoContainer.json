@@ -121,7 +121,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"targetFile": {
-											"value": "@item().targetpath",
+											"value": "@concat(item().targetpath, '.csv')",
 											"type": "Expression"
 										},
 										"targetPath": {
